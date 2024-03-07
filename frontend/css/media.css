@@ -1,0 +1,86 @@
+@media (max-width: 768px) {
+    .header__search {
+        width: 310px;
+    }
+
+    td, th {
+        padding: 2px;
+    }
+
+    .fulldate {
+        flex-direction: column;
+    } 
+
+    .modul__box, 
+    .client__cards .modul__box {
+        width: 300px;
+        padding: 10px;
+    }
+
+    .modul__contacts {
+        margin: 0px -10px 20px -10px
+    }
+
+    .contacts__block--active {
+        width: 270px;
+    }
+
+    .choices__inner {
+        width: 110px;
+    }
+
+    .choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .header {
+        height: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .header__container {
+        justify-content: center;
+    }
+
+    .header__logo {
+        width: 24px;
+        height: 24px;
+        padding: 4px 2px;
+        margin-right: 0;
+        font-size: 12px;
+    }
+
+    .header__logo.link {
+        display: none;
+    }
+    .header__search {
+        width: 200px;
+        padding: 8px;
+        top: 9px;
+        font-size: 12px;
+    }
+
+    .header__logo.btn {
+        display: block;
+    }
+
+    .header__input {
+        height: 23px;
+        width: 0;
+        opacity: 0;
+    }
+
+    .header__input--active {
+        width: 200px;
+        opacity: 1;
+    }
+
+    .header__logo--active {
+        margin-right: 10px;
+    }
+}

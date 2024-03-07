@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container flex">
+            <a href="#" class="header__logo link">skb.</a>
+            <button id="headerLogoBtn" class="header__logo btn">skb.</button>
+            <input id="headerInput" type="text" class="header__input" placeholder="Введите запрос">
+            <ul id="headerSearch" class="header__search"></ul>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <h1 class="title">Клиенты</h1>
+            <div class="table-container">
+                <table class="table" id="table">
+                    <thead class="table__headers">
+                        <tr>
+                            <th class="table__header">
+                                <div class="table__check flex">
+                                    <input class="table__check-input" type="checkbox" id="idClient">
+                                    <label class="table__check-label" for="idClient">ID</label>
+    
+                                </div>
+                            </th>
+                            <th class="table__header">
+                                <div class="table__check--fio table__check flex">
+                                    <span class="table__check-span">А-Я</span>
+                                    <input class="table__check-input" type="checkbox" id="fioClient">
+                                    <label class="table__check-label" for="fioClient">Фамилия Имя Отчество</label>
+                                </div>
+                            </th>
+                            <th class="table__header">
+                                <div class="table__check flex th-date">
+                                    <input class="table__check-input" type="checkbox" id="DateAddClient">
+                                    <label class="table__check-label" for="DateAddClient">Дата и время создания</label>
+                                </div>
+                            </th>
+                            <th class="table__header">
+                                <div class="table__check flex th-date">
+                                    <input class="table__check-input" type="checkbox" id="lastChangeClient">
+                                    <label class="table__check-label" for="lastChangeClient">Последние изменения</label>
+                                </div>
+                            </th>
+                            <th class="table__header">
+                                <div class="table__check">Контакты
+                                </div>
+                            </th>
+                            <th class="table__header">
+                                <div class="table__check">Действия
+                                </div>
+                            </th>
+                        </tr>
+                        
+                    </thead>
+                    <tbody class="tbody" id="tbody"></tbody>
+                </table>
+            </div>
+            <div class="flex container__btn">
+                <button class="btn btn-modul-open" id="btnAddClient">Добавить клиента</button>
+            </div>
+            <div class="modul" id="modul"></div>
+        </div>
+    </main>
+    <script defer src="js/scripts/choices.min.js"></script>
+    <script defer src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script defer src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
